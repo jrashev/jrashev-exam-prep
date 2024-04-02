@@ -48,3 +48,5 @@ jobs:
       run: npm run start &
     - name: run the ui tests
       run: npm run test:ui
+    - name: dsiplay softuni username
+      run: echo "jrashev"  
