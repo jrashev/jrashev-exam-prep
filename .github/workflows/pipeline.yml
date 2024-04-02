@@ -50,10 +50,7 @@ jobs:
       run: npm run test:ui
     - name: dsiplay softuni username
       run: echo "jrashev"  
-
-
-
-      
+     
   deploy:
     runs-on: ubuntu-latest
     needs: run-ui-tests
