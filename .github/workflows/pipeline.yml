@@ -1,0 +1,29 @@
+
+
+name: Buiild and test shopping App
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build_test:
+
+    runs-on: ubuntu-latest
+
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+    - name: Use Node.js 20.x
+      uses: actions/setup-node@v3
+      with:
+        node-version: 20.x
+        cache: 'npm'
+    - name: Install NPM dependencies
+      run: npm install
+    - name: run unit tests  
+      run: npm run test:unit
+    
