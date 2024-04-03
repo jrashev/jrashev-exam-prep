@@ -49,7 +49,7 @@ jobs:
     - name: run the ui tests
       run: npm run test:ui
     - name: dsiplay softuni username
-      run: echo "jrashev"  
+      run: echo "jrashev test"  
      
   deploy:
     runs-on: ubuntu-latest
